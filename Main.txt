@@ -1,5 +1,5 @@
-Etapa 1: Proyecto Creado >>> “New Project”
-	-Meta: sea automático y genere una pantalla de hola mundo (así no sea con todos los lineamientos de diseño de la pantalla - viewmodel, viewpart, binding, etc)
+Actividad: Creacion de un Proyecto Android Nuevo >>> ï¿½New Projectï¿½
+	-Meta: sea automatico y genere una pantalla de hola mundo (asi no sea con todos los lineamientos de diseÃ±o de la pantalla - viewmodel, viewpart, binding, etc)
 	-Debe tener al menos un activity.
 
 	-Realizado: Se hizo el proyecto base que cuenta con una sola actividad y una pantalla en la que se muestra un "Hello World" como ejemplo base.

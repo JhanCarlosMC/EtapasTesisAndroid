@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.project.etapacero'
+    namespace 'com.projectname.applicationname'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.project.etapacero"
+        applicationId "com.projectname.applicationname"
         minSdk 26
         targetSdk 33
         versionCode 1

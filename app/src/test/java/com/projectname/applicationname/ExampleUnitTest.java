@@ -1,4 +1,4 @@
-package com.project.etapacero;
+package com.projectname.applicationname;
 
 import org.junit.Test;
 

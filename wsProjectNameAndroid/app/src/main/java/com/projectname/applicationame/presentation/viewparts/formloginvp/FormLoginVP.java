@@ -12,10 +12,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
+import android.content.DialogInterface;
 import com.projectname.applicationame.APP;
 import com.projectname.applicationame.R;
 import com.projectname.applicationame.databinding.LoginFormBinding;
@@ -99,9 +100,24 @@ public class FormLoginVP extends AppCompatActivity implements ViewVP {
                     textUser.setText(null);
                     textPassword.setText(null);
                     formLoginVM.resetTexts();
+                }else{
+                    mostrarAlerta();
                 }
             }
         });
+    }
+
+    private void mostrarAlerta() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Debe completar todos campos del formulario")
+                .setTitle("Alerta")
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
     @Override
     public void onDestroy() {
